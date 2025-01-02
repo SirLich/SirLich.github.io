@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'SirLich.dev'
+pluralizelisttitles = false
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[permalinks]
+categories = "/:section/:slug"
+tags = "/:section/:slug"

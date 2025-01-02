@@ -1,0 +1,31 @@
+{{/*  Get num posts  */}}
+{{ $numposts := .Params.numposts | default 3 }}
+
+{{/*  Fetch content, depending on whether we are in index page or taxonomy page  */}}
+{{ $content := slice }}
+{{ if .IsHome }}
+  {{ $content = where site.RegularPages ".Params.unlisted" "!=" "true" }}
+{{ else if .Pages }}
+  {{ $content = .Pages }}
+{{end}}
+
+{{ $count := len $content }}
+{{/*  Iterate over  */}}
+{{ if ge $count 0 }}
+	<div class="post-container">
+		{{ range first $numposts $content }}
+		{{partial "pretty-post.html" .}}
+	{{ end }}
+	</div>
+{{end}}
+
+
+{{/*  Conditionally render older posts  */}}
+{{ if gt $count $numposts }}
+	<h1>Older Posts</h1>
+	<div class="post-container">
+		{{ range after $numposts $content }}
+			{{partial "simple-post.html" .}}
+		{{ end }}
+	</div>
+{{end}}

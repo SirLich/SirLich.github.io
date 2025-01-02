@@ -1,0 +1,261 @@
+:root {
+  --sirlich-offset: -50px;
+}
+
+
+/* Base */
+html {
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue,sans-serif;
+  background-color: #ebebeb;
+}
+
+.content {
+  max-width: 90ch;
+  margin: auto;
+  padding: 3em 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 0.5em;
+}
+
+p,
+ul,
+ol,
+{
+  margin-bottom: 2em;
+  color: #1d1d1d;
+}
+
+p, a {
+  font-size: 18px;
+}
+
+/* Icons */
+.sirlich-icons {
+  position: relative;
+}
+
+.sirlich1 {
+  position: absolute;
+  left: calc(var(--sirlich-offset) - 150px);
+  max-width: 90px;
+  transform: rotate(-16deg);
+}
+.sirlich2 {
+  position: absolute;
+  top: 150px;
+  max-width: 60px;
+  height: auto;
+  left: calc(var(--sirlich-offset) - 150px);
+  transform: rotate(10deg);
+}
+.sirlich3 {
+  position: absolute;
+  top: 120px;
+  max-width: 40px;
+  height: auto;
+  left: calc(var(--sirlich-offset) - 80px);
+  transform: rotate(-3deg);
+}
+.sirlich4 {
+  position: absolute;
+  left: calc(var(--sirlich-offset) - 120px);
+  transform: rotate(12deg);
+  max-width: 90px;
+  top: 230px;
+}
+.sirlich5 {
+  position: absolute;
+  top: 330px;
+  max-width: 60px;
+  height: auto;
+  left: calc(var(--sirlich-offset) - 100px);
+  transform: rotate(-10deg);
+}
+.sirlich6 {
+  position: absolute;
+  top: 400px;
+  max-width: 50px;
+  height: auto;
+  left: calc(var(--sirlich-offset) - 120px);
+  transform: rotate(-30deg);
+}
+.sirlich7 {
+  position: absolute;
+  left: calc(var(--sirlich-offset) - 150px);
+  top: 500px;
+  max-width: 90px;
+  transform: rotate(-5deg);
+}
+.sirlich8 {
+  position: absolute;
+  top: 450px;
+  max-width: 45px;
+  height: auto;
+  left: calc(var(--sirlich-offset) - 100px);
+  transform: rotate(20deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .sirlich-icons {
+      display: none;
+  }
+}
+
+/* Icons */
+
+.sirlich-photo {
+  display: block;
+  vertical-align: bottom;
+  max-width: 64px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*  Post Card */
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-bottom: 2em;
+  display: block;
+  text-decoration: none;
+}
+
+.card-link {
+  color: black;
+  text-decoration: none;
+}
+
+.card-description {
+  margin: 0em 0 0em;
+}
+
+.card-bonus {
+  margin: 0em 0 0em;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.card-bonus-entry {
+  margin: 0em 0 0em;
+  color:rgb(60, 56, 54);
+  font-size: 16px;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.hashtag-group {
+  font-size: 0.75em;
+  margin: 0em 0 0em;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.secondary {
+  font-size: 0.75em;
+  margin: 0em 0 0em;
+  color: black;
+}
+
+.secondary-title {
+  margin: 0em 0 0em;
+}
+
+.year-title {
+  margin: 0em 0 0em;
+  font-weight: normal;
+}
+
+.shift-right {
+  position: relative;
+  left: 50px;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100ch;
+  margin: auto;
+}
+
+nav h2 {
+  margin: 0em 0 0em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  text-decoration:none;
+  color: black;
+}
+
+nav .site-title {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: black;
+}
+
+/* Code stuff */
+
+pre {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Inline Code */
+
+code {
+  background-color: #272822;
+  color: #f8f8f2;
+  border-radius: 0.2em;
+  padding: 1px 2px 1px;
+  white-space: nowrap;
+}
+
+pre code {
+  white-space: pre;
+}

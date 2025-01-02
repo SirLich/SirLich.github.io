@@ -1,0 +1,8 @@
+{{ define "page" }}
+  <article class="container">
+    <div>
+      <h2>{{ .Title }} {{ partial "sirlich.html" . }} </h2>
+    </div>
+    {{ .Content }}
+  </article>
+{{ end }}

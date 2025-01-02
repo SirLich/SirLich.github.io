@@ -1,0 +1,11 @@
+<h3> Tags </h3>
+<div class="hashtag-group">
+	{{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+	{{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+		<div class="hashtag">
+			<a href={{ .RelPermalink }} title="All pages with tag {{$name}}">#{{$name}}</a>
+			<sup>{{$cnt}}</sup>
+		</div>
+	{{end}}
+{{end}}
+</div>

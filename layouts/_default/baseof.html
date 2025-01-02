@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{
+      .CurrentSection.Title }}{{ end }}
+    </title>
+    {{ $style := resources.Get "css/style.css"}}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+    {{ $syntax := resources.Get "css/syntax.css"}}
+    <link rel="stylesheet" href="{{ $syntax.RelPermalink }}" />
+
+  </head>
+  <body>
+    {{ partial "navbar.html"}}
+    <div class="content">
+      {{ block "page" . }}{{ end }} {{ block "main" . }}{{ end }}
+    </div>
+  </body>
+</html>

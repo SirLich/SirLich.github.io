@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <div class="sirlich-icons">
+        <img class="sirlich1" src="/skull.webp">
+        <img class="sirlich2" src="/winter.webp">
+        <img class="sirlich3" src="/squid.webp">
+        <img class="sirlich4" src="/worm.webp">
+        <img class="sirlich5" src="/flower.webp">
+        <img class="sirlich6" src="/red.webp">
+        <img class="sirlich7" src="/godot.webp">
+        <img class="sirlich8" src="/lemon.webp">
+    </div>
+    {{ $style := resources.Get "css/index.css"}}
+    {{ partial "posts.html" . }}
+{{ end }}

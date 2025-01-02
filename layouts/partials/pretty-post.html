@@ -1,0 +1,9 @@
+<div class="card">
+	<a class="card-link" href="{{ .Permalink }}">
+		<div>
+			<h3 class="secondary-title">{{ .Title }}</h3>
+			<p class="card-description">{{.Description}}</p>
+		</div>
+	</a>
+	{{partial "tags.html" .}}
+</div>

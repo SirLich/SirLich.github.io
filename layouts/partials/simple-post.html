@@ -1,0 +1,8 @@
+<div class="card">
+	<a class="card-link" href="{{ .Permalink }}">
+		<div>
+			<h4 class="secondary-title">{{ .Title }}</h4>
+			<p class="card-bonus card-date card-bonus-entry">{{ .Date | time.Format ":date_medium" }}</p>
+		</div>
+	</a>
+</div>

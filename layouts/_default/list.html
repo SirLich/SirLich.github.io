@@ -1,0 +1,13 @@
+{{ define "page" }}	
+	{{partial "hashtags.html" .}}
+
+	<br>
+	{{ range .Pages.GroupByDate "2006" }}
+		<h2 class="year-title">{{ .Key }}</h2>
+		<div class="shift-right">
+			{{ range .Pages.ByTitle }}
+				{{partial "simple-post.html" .}}
+			{{end}}
+		</div>
+	{{ end }}
+{{ end }}

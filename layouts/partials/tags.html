@@ -1,0 +1,7 @@
+<div class="card-bonus">
+	<p class="card-bonus-entry">{{ .Date | time.Format ":date_medium" }}</p>
+
+	{{ range (.GetTerms "tags") }}
+		<a href="/tags/{{ urlize .LinkTitle }}" class="card-bonus-entry">#{{ urlize .LinkTitle }}</a>
+	{{ end }}
+</div>

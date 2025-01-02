@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <h1>#{{ .Title }}</h1>
+  {{ $tag := .Title}}
+  {{ $path := $tag | path.Join "descriptions" }}
+  {{ $file := .Site.GetPage "page" $path}}
+  {{ if $file }}
+    <div class="tag-description">
+      {{ $file.Content | safeHTML }}
+    </div>
+  {{ else }}
+    <p>No description available for this tag.</p>
+  {{ end }}
+  <h1> Posts </h1>
+  {{ partial "posts.html" . }}
+{{ end }}

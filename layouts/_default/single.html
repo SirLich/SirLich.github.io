@@ -1,0 +1,7 @@
+{{ define "page" }}
+<article class="container" data-pagefind-body>
+  <h1 class="secondary-title">{{ .Title }}</h1>
+  {{partial "tags.html" .}}
+  {{ .Content }}
+</article>
+{{ end }}
