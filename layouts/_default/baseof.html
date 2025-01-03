@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    {{ template "_internal/opengraph.html" . }}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
       {{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{
