@@ -60,7 +60,7 @@ p, a, li {
 .sirlich3 {
   position: absolute;
   top: 120px;
-  max-width: 40px;
+  max-width: 50px;
   height: auto;
   left: calc(var(--sirlich-offset) - 80px);
   transform: rotate(-3deg);
@@ -102,6 +102,21 @@ p, a, li {
   height: auto;
   left: calc(var(--sirlich-offset) - 100px);
   transform: rotate(20deg);
+}
+.sirlich9 {
+  position: absolute;
+  left: calc(var(--sirlich-offset) - 120px);
+  top: 600px;
+  max-width: 100px;
+  transform: rotate(-10deg);
+}
+.sirlich10 {
+  position: absolute;
+  top: 690px;
+  max-width: 55px;
+  height: auto;
+  left: calc(var(--sirlich-offset) - 120px);
+  transform: rotate(15deg);
 }
 
 @media screen and (max-width: 1200px) {

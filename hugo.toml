@@ -2,6 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'SirLich.dev'
 pluralizelisttitles = false
+defaultContentLanguage = "en"
 
 [taxonomies]
 category = "categories"
