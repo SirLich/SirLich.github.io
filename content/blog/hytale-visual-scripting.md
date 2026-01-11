@@ -2,6 +2,7 @@
 title: "Visual Scripting & Hytale"
 description : Personal musings on the efficacy of Visual Scripting
 date: 2025-10-19
+draft: true
 categories:
  - "programming"
 tags:
