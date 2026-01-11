@@ -6,7 +6,7 @@
 /* Base */
 html {
   line-height: 1.6;
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
   background-color: #ebebeb;
 }
 
@@ -28,15 +28,25 @@ h6 {
 p,
 ul,
 ol,
-{
-  margin-bottom: 2em;
+blockquote {
+  /* margin-bottom: 2em; */
   color: #1d1d1d;
 }
 
-p, a, li {
+p,
+a,
+li,
+blockquote {
   font-size: 18px;
 }
 
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-left: 15px;
+  border-left: 6px solid #ccc;
+}
 
 /* Icons */
 .sirlich-icons {
@@ -49,6 +59,7 @@ p, a, li {
   max-width: 90px;
   transform: rotate(-16deg);
 }
+
 .sirlich2 {
   position: absolute;
   top: 150px;
@@ -57,6 +68,7 @@ p, a, li {
   left: calc(var(--sirlich-offset) - 150px);
   transform: rotate(10deg);
 }
+
 .sirlich3 {
   position: absolute;
   top: 120px;
@@ -65,6 +77,7 @@ p, a, li {
   left: calc(var(--sirlich-offset) - 80px);
   transform: rotate(-3deg);
 }
+
 .sirlich4 {
   position: absolute;
   left: calc(var(--sirlich-offset) - 120px);
@@ -72,6 +85,7 @@ p, a, li {
   max-width: 90px;
   top: 230px;
 }
+
 .sirlich5 {
   position: absolute;
   top: 330px;
@@ -80,6 +94,7 @@ p, a, li {
   left: calc(var(--sirlich-offset) - 100px);
   transform: rotate(-10deg);
 }
+
 .sirlich6 {
   position: absolute;
   top: 400px;
@@ -88,6 +103,7 @@ p, a, li {
   left: calc(var(--sirlich-offset) - 120px);
   transform: rotate(-30deg);
 }
+
 .sirlich7 {
   position: absolute;
   left: calc(var(--sirlich-offset) - 150px);
@@ -95,6 +111,7 @@ p, a, li {
   max-width: 90px;
   transform: rotate(-5deg);
 }
+
 .sirlich8 {
   position: absolute;
   top: 450px;
@@ -103,6 +120,7 @@ p, a, li {
   left: calc(var(--sirlich-offset) - 100px);
   transform: rotate(20deg);
 }
+
 .sirlich9 {
   position: absolute;
   left: calc(var(--sirlich-offset) - 120px);
@@ -110,6 +128,7 @@ p, a, li {
   max-width: 100px;
   transform: rotate(-10deg);
 }
+
 .sirlich10 {
   position: absolute;
   top: 690px;
@@ -121,7 +140,7 @@ p, a, li {
 
 @media screen and (max-width: 1200px) {
   .sirlich-icons {
-      display: none;
+    display: none;
   }
 }
 
@@ -129,7 +148,6 @@ p, a, li {
 
 .sirlich-photo {
   display: block;
-  vertical-align: bottom;
   max-width: 64px;
 }
 
@@ -170,7 +188,7 @@ img {
 
 .card-bonus-entry {
   margin: 0em 0 0em;
-  color:rgb(60, 56, 54);
+  color: rgb(60, 56, 54);
   font-size: 16px;
 }
 
@@ -245,7 +263,7 @@ nav li {
 }
 
 nav a {
-  text-decoration:none;
+  text-decoration: none;
   color: black;
 }
 
