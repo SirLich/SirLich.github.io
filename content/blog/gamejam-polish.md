@@ -1,3 +1,15 @@
+---
+title: "Gamejam Polish"
+description : Non
+draft: true
+date: 2026-02-05
+categories:
+ - "programming"
+tags:
+ - "godot"
+ - "gamedev"
+---
+
 When I critique my own jam games, I often find that I've put too much effort into polish, and not enough effort into the foundational bones of the game. I think I'm afraid that if I take on a risky idea, that I won't be able to execute it to some arbitrary quality bar.
 
 In many respects, our product is very polished for a jam game. We largely don't use assets*, and yet out game has:
