@@ -13,4 +13,3 @@ This site is built using Hugo, without a theme. Pagefind is used for search.
  - Building: `hugo`
  - Pagefind: `python -m pagefind --site public --serve`
  - Loc: `cloc . --include-ext=html --vcs=git`
-
