@@ -1,6 +1,6 @@
 # sirlich.dev
 
-Personal Website, which you can [visit here].
+Personal Website, which you can [visit here](https://sirlich.dev/).
 
 ## Arch. Explanation
 
