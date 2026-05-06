@@ -1,5 +1,34 @@
 :root {
   --sirlich-offset: -50px;
+  --text-primary: rgb(0, 0, 0);
+  --text-color: #1d1d1d;
+  --bg-color: #ebebeb;
+  --tag-color: rgb(60, 56, 54);
+  --code-bg-color: #272822;
+  --code-text-color: #f2f4f8;
+  --icon-color: rgb(0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #9b9fd6;
+    --text-color: #dedbd5;
+    --bg-color: #212733;
+    --tag-color: #5a5d64;
+    --code-bg-color: #272822;
+    --code-text-color: #f2f4f8;
+    --icon-color: rgb(213, 201, 201);
+    --link-color: #4d669e;
+    --link-visited-color: #784d9e;
+  }
+}
+
+a {
+  color: var(--link-color)
+}
+
+a:visited {
+  color: var(--link-visited-color)
 }
 
 
@@ -7,7 +36,7 @@
 html {
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
-  background-color: #ebebeb;
+  background-color: var(--bg-color);
 }
 
 .content {
@@ -23,6 +52,7 @@ h4,
 h5,
 h6 {
   margin: 2em 0 0.5em;
+  color: var(--text-primary)
 }
 
 p,
@@ -30,7 +60,7 @@ ul,
 ol,
 blockquote {
   /* margin-bottom: 2em; */
-  color: #1d1d1d;
+  color: var(--text-color);
 }
 
 p,
@@ -171,7 +201,7 @@ img {
 }
 
 .card-link {
-  color: black;
+  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -188,7 +218,7 @@ img {
 
 .card-bonus-entry {
   margin: 0em 0 0em;
-  color: rgb(60, 56, 54);
+  color: var(--tag-color);
   font-size: 16px;
 }
 
@@ -204,6 +234,7 @@ img {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  fill: var(--icon-color)
 }
 
 .icon svg {
@@ -223,7 +254,7 @@ img {
 .secondary {
   font-size: 0.75em;
   margin: 0em 0 0em;
-  color: black;
+  color: var(--text-primary);
 }
 
 .secondary-title {
@@ -264,13 +295,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: var(--text-primary);
 }
 
 nav .site-title {
   font-size: 1.5em;
   font-weight: bolder;
-  color: black;
+  color: var(--text-primary);
 }
 
 /* Code stuff */
@@ -283,9 +314,9 @@ pre {
 /* Inline Code */
 
 code {
-  background-color: #272822;
+  background-color: var(--code-bg-color);
   font-family: monospace;
-  color: #f8f8f2;
+  color: var(--code-text-color);
   font-size: 16px;
   border-radius: 0.2em;
   padding: 1px 2px 1px;
