@@ -75,3 +75,9 @@ We used my [Jam Template](https://github.com/SirLich/godot-jam-template), and it
 I want to make some small non-jam games with the template, to refine it further. 
 
 Till next time!
+
+## Results
+
+We placed 48/1208, which makes this my best Ludum Dare entry ever!
+
+![alt text](/images/cave-man-conversations/results.png)

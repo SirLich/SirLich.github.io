@@ -1,0 +1,6 @@
+<div class="notice {{ .Params.type }}">
+	<p class="notice-title">{{ .Get "title" }}</p>
+	<p class="notice-body">
+		{{ .Inner | markdownify }}
+	</p>
+</div>

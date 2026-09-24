@@ -1,0 +1,25 @@
+<div class="slidecontainer">
+	<h3>{{ .Get "title" }}</h3>
+	<p>{{ .Inner | markdownify }}</p>
+	<span class="ai-row">
+		<p class="ai-arg">Bad Argument</p>
+		<input class="ai-input" type="range" min="1" max="100" value="50" class="slider" id="{{ .Params.id }}">
+		<p class="ai-arg">Good Argument</p>
+	</span>
+	<script>
+		var sliderId = {{ .Get "id" }};
+		var slider = document.getElementById(sliderId)
+		slider.addEventListener('change', onChangeHandler);
+
+		var params = (new URL(document.location)).searchParams;
+		var value = params.get(sliderId);
+
+		slider.value = value;
+
+		function onChangeHandler(evt) {
+			var params = (new URL(document.location)).searchParams;
+			params.set(sliderId, this.value);
+			window.location.search = params;
+		}
+	</script>
+</div>
