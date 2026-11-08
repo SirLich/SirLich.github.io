@@ -1,13 +1,24 @@
-{{ define "page" }}	
-	{{partial "hashtags.html" .}}
+{{ define "page" }}
 
-	<br>
-	{{ range .Pages.GroupByDate "2006" }}
-		<h2 class="year-title">{{ .Key }}</h2>
-		<div class="shift-right">
-			{{ range .Pages.ByTitle }}
-				{{partial "simple-post.html" .}}
-			{{end}}
-		</div>
-	{{ end }}
+{{partial "hashtags.html" .}}
+
+<h2> Search </h2>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		new PagefindUI({ element: "#search", showSubResults: true });
+	});
+</script>
+
+<br>
+{{ range .Pages.GroupByDate "2006" }}
+<h2 class="year-title">{{ .Key }}</h2>
+<div class="shift-right">
+	{{ range .Pages.ByTitle }}
+	{{partial "simple-post.html" .}}
+	{{end}}
+</div>
+{{ end }}
 {{ end }}
